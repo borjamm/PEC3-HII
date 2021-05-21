@@ -15,6 +15,11 @@ module.exports = {
       borderColor: {
         gray: "#ccc",
         "gray-line": "hsla(0,0%,100%,.1)",
+        input: "#ced4da",
+        "input-color": "#212529",
+        primary: "#5d9cec",
+        "primary-border": "#86b7fe",
+        "primary-hover-border": "#6da6ee",
       },
       fontFamily: {
         poppins: '"Poppins", sans-serif',
@@ -25,16 +30,22 @@ module.exports = {
         "dark-light": "#acaeae",
         "primary-light": "#8bb8f1",
         "black-light-opacity": "#ccc",
+        primary: "#5d9cec",
+        "primary-hover": "#75abef",
       },
       backgroundColor: {
         dark: "#2d2e2e",
+        gray: "#e9ecef",
       },
       minHeight: {
         screen: "83vh",
+        textarea: "calc(1.5em + .75rem + 2px)",
       },
       width: {
         85: "350px",
         "1-5": "1.5em",
+        "1-percentage": "1%",
+        "48/52": "12.5rem",
       },
       height: {
         "1-5": "1.5em",
@@ -71,12 +82,16 @@ module.exports = {
       },
       margin: {
         minus: "-0.25rem",
+        "4-minus": "-1rem",
+        "2-minus": "-0.5rem",
+        "1-minus": "-1px",
       },
       lineHeight: {
         1.2: "1.2",
       },
       boxShadow: {
         outline: "0 0 0 0.25rem",
+        "outline-input": "0 0 0 0.25rem rgb(13 110 253 / 25%);",
       },
     },
   },

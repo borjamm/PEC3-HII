@@ -81,41 +81,196 @@
                     <abbr class="abbr" title="Campo obligatorio">*</abbr>
                     son obligatorios.
                 </p>
-                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="rounded-5 bg-white py-4 px-2 mobile:p-0 flex flex-wrap" novalidate>
+                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="rounded-5 bg-white py-4 px-2 mobile:p-0 flex flex-wrap mt-4-minus mx-2-minus" novalidate>
                     <input type="hidden" name="form-name" value="contact" />
-                    <div class="">
-                        <label for="name" class="">Nombre (<abbr class="main__abbr">*</abbr>)</label>
-                        <input type="text" class="" id="name" name="name" placeholder="Nombre" required />
-                        <div class="">Este campo es obligatorio</div>
+                    <div class="flex-shrink-0 w-full max-w-full px-2 mt-4 md:w-2/4 md:flex-0">
+                        <label for="name" class="inline-block mb-2">Nombre (<abbr class="main__abbr">*</abbr>)</label>
+                        <input
+                            type="text"
+                            class="
+                                block
+                                w-full
+                                py-1.5
+                                px-3
+                                text-base
+                                font-normal
+                                leading-normal
+                                bg-clip-padding
+                                rounded
+                                appearance-none
+                                border border-solid border-input
+                                text-input-color
+                                placeholder-gray-500
+                                bg-white
+                                transition
+                                duration-150
+                                ease-in-out
+                                focus:border-primary-border
+                                focus:outline-none
+                                focus:shadow-outline-input
+                            "
+                            id="name"
+                            name="name"
+                            placeholder="Nombre"
+                            required
+                        />
+                        <!-- <div class="">Este campo es obligatorio</div> -->
                     </div>
 
-                    <div class="">
-                        <label for="email" class="">Email (<abbr class="main__abbr">*</abbr>)</label>
-                        <div class="">
-                            <span class="" id="inputGroupPrepend">@</span>
-                            <input type="email" class="" id="email" name="email" placeholder="Email" required />
-                            <div class="">Este campo es obligatorio</div>
+                    <div class="flex-shrink-0 w-full max-w-full px-2 mt-4 md:w-2/4 md:flex-0">
+                        <label for="email" class="inline-block mb-2">Email (<abbr class="main__abbr">*</abbr>)</label>
+                        <div class="relative flex flex-wrap items-stretch w-full">
+                            <span
+                                class="flex items-center py-1.5 px-3 text-base font-normal leading-normal text-input-color bg-gray border border-solid border-input rounded rounded-r-none"
+                                id="inputGroupPrepend"
+                                >@</span
+                            >
+                            <input
+                                type="email"
+                                class="
+                                    relative
+                                    flex-auto
+                                    w-1-percentage
+                                    block
+                                    py-1.5
+                                    px-3
+                                    text-base
+                                    font-normal
+                                    leading-normal
+                                    bg-clip-padding
+                                    appearance-none
+                                    border border-solid border-input
+                                    text-input-color
+                                    placeholder-gray-500
+                                    bg-white
+                                    ml-1-minus
+                                    rounded rounded-l-none
+                                    transition
+                                    duration-150
+                                    ease-in-out
+                                    focus:border-primary-border
+                                    focus:outline-none
+                                    focus:shadow-outline-input
+                                "
+                                id="email"
+                                name="email"
+                                placeholder="Email"
+                                required
+                            />
+                            <!-- <div class="">Este campo es obligatorio</div> -->
                         </div>
                     </div>
 
-                    <div class="">
-                        <label for="subject" class="">Asunto (<abbr class="main__abbr">*</abbr>)</label>
-                        <input type="text" class="" id="subject" placeholder="Asunto" name="subject" required />
-                        <div class="">Este campo es obligatorio</div>
+                    <div class="flex-shrink-0 w-full max-w-full px-2 mt-4 md:flex-0">
+                        <label for="subject" class="inline-block mb-2">Asunto (<abbr class="main__abbr">*</abbr>)</label>
+                        <input
+                            type="text"
+                            class="
+                                block
+                                w-full
+                                py-1.5
+                                px-3
+                                text-base
+                                font-normal
+                                leading-normal
+                                bg-clip-padding
+                                rounded
+                                appearance-none
+                                border border-solid border-input
+                                text-input-color
+                                placeholder-gray-500
+                                bg-white
+                                transition
+                                duration-150
+                                ease-in-out
+                                focus:border-primary-border
+                                focus:outline-none
+                                focus:shadow-outline-input
+                            "
+                            id="subject"
+                            placeholder="Asunto"
+                            name="subject"
+                            required
+                        />
+                        <!-- <div class="">Este campo es obligatorio</div> -->
                     </div>
 
-                    <div class="">
-                        <label for="message" class="">Mensaje (<abbr class="main__abbr">*</abbr>)</label>
-                        <textarea class="" id="message" rows="5" name="message" placeholder="Escribe un mensaje" required></textarea>
-                        <div class="">Este campo es obligatorio</div>
+                    <div class="flex-shrink-0 w-full max-w-full px-2 mt-4 md:flex-0">
+                        <label for="message" class="inline-block mb-2">Mensaje (<abbr class="main__abbr">*</abbr>)</label>
+                        <textarea
+                            class="
+                                block
+                                w-full
+                                py-1.5
+                                px-3
+                                text-base
+                                font-normal
+                                leading-normal
+                                bg-clip-padding
+                                text-input-color
+                                bg-white
+                                appearance-none
+                                border border-solid border-input
+                                resize-y
+                                placeholder-gray-500
+                                rounded
+                                min-h-textarea
+                                transition
+                                duration-150
+                                ease-in-out
+                                focus:border-primary-border
+                                focus:outline-none
+                                focus:shadow-outline-input
+                            "
+                            id="message"
+                            rows="5"
+                            name="message"
+                            placeholder="Escribe un mensaje"
+                            required
+                        ></textarea>
+                        <!-- <div class="">Este campo es obligatorio</div> -->
                     </div>
 
-                    <div class="">
+                    <div class="flex-shrink-0 w-full max-w-full px-2 mt-4 md:w-2/4 md:flex-0">
                         <div data-netlify-recaptcha="true"></div>
                     </div>
 
-                    <div class="">
-                        <button class="" type="submit">Enviar</button>
+                    <div class="flex-shrink-0 w-full max-w-full px-2 mt-4 md:w-2/4 md:flex-0">
+                        <button
+                            class="
+                                block
+                                float-right
+                                uppercase
+                                font-bold
+                                py-2
+                                px-0
+                                text-black
+                                bg-primary
+                                border-primary
+                                text-base
+                                leading-normal
+                                text-center
+                                no-underline
+                                align-middle
+                                select-none
+                                border border-solid border-transparent
+                                rounded
+                                transition
+                                duration-150
+                                ease-in-out
+                                focus:border-primary-border
+                                focus:outline-none
+                                focus:shadow-outline-input
+                                hover:text-black
+                                hover:bg-primary-hover
+                                hover:primary-hover-border
+                                w-full
+                                md:w-48/52
+                            "
+                            type="submit"
+                        >
+                            Enviar
+                        </button>
                     </div>
                 </form>
             </div>
