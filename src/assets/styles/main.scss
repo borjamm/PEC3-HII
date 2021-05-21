@@ -26,6 +26,7 @@
  */
 
 @import "layouts/home";
+@import "components/components.scss";
 
 /**
  * Do NOT include anything else in this file!
@@ -34,12 +35,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-  .card {
-    @apply border-none w-85 text-center mx-4 my-6 relative flex flex-col min-w-0 break-words bg-white bg-clip-border rounded;
-  }
-  abbr[title].abbr {
-    @apply no-underline;
-  }
-}

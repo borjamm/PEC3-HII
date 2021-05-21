@@ -1,0 +1,91 @@
+@layer components {
+  /*-------------------------------------------------*\
+    # CARD
+  \*-------------------------------------------------*/
+  .card {
+    @apply border-none w-85 text-center mx-4 my-6 relative flex flex-col min-w-0 break-words bg-white bg-clip-border rounded;
+  }
+
+  .card-img-top {
+    @apply h-60 object-cover rounded-t;
+  }
+
+  .card-body {
+    @apply flex-auto p-4;
+  }
+
+  .card-title {
+    @apply mt-4 mb-2 text-1-2 font-bold leading-1.2;
+  }
+
+  .card-subtitle {
+    @apply text-sm mb-4 mt-minus leading-1.2;
+  }
+
+  .card-text {
+    @apply my-0;
+  }
+
+  /*-------------------------------------------------*\
+    # BREADCRUMB
+  \*-------------------------------------------------*/
+
+  .nav-breadcrumb {
+    @apply ml-0 mobile:ml-20 mobile:text-center;
+  }
+
+  .breadcrumb {
+    @apply flex flex-wrap p-0 mb-4 list-none mt-0 justify-center mobile:justify-start;
+  }
+
+  .breadcrumb-item {
+    @apply breadcrumb__active text-dark pl-2;
+  }
+
+  .breadcrumb-link {
+    @apply no-underline text-primary-dark hover:text-primary-light;
+  }
+
+  /*-------------------------------------------------*\
+    # BUTTON PRIMARY
+  \*-------------------------------------------------*/
+
+  .btn-primary {
+    @apply block
+      float-right
+      uppercase
+      font-bold
+      py-2
+      px-0
+      text-black
+      bg-primary
+      border-primary
+      text-base
+      leading-normal
+      text-center
+      no-underline
+      align-middle
+      select-none
+      border border-solid border-transparent
+      rounded
+      transition
+      duration-150
+      ease-in-out
+      focus:border-primary-border
+      focus:outline-none
+      focus:shadow-outline-input
+      hover:text-black
+      hover:bg-primary-form
+      hover:border-primary-form-border 
+      w-full
+      md:w-48/52;
+  }
+
+  /*-------------------------------------------------*\
+    # ABBR
+  \*-------------------------------------------------*/
+
+  abbr[title].abbr {
+    @apply no-underline;
+  }
+}

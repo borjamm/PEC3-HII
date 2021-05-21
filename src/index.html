@@ -1,17 +1,107 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="es">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
         <!-- do not remove this line! -->
-        <title>UOC Boilerplate</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins&display=swap&family=Leckerli+One&display=swap" rel="stylesheet" />
+        <link rel="icon shortcut" type="image/x-icon" href="../src/assets/images/favicon.ico" />
+        <title>Inicio</title>
     </head>
-    <body>
-        <h1 class="uoc-title">Hello, UOC! <i class="fas fa-university"></i></h1>
-        <a href="./contact.html">Contacto</a>
-        <a href="./members.html">Miembros</a>
+    <body class="font-poppins">
+        <header class="border-b-3 border-solid border-black-light-opacity">
+            <nav class="py-4 bg-dark">
+                <div class="w-full mx-auto flex items-center justify-between px-3">
+                    <a class="text-white font-alfa hover:text-dark-light m-0 ml-2 text-fs xl:text-2.5xl" href="/src/index.html">BMM</a>
+                    <button
+                        class="
+                            block
+                            py-1
+                            px-3
+                            text-dark-light
+                            border border-gray-line
+                            text-xl
+                            rounded
+                            bg-transparent
+                            leading-none
+                            sm:hidden
+                            focus:shadow-outline
+                            focus:outline-none
+                            transition-shadow
+                            ease-in-out
+                        "
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03"
+                        aria-controls="navbarTogglerDemo03"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="bg-bars inline-block w-1-5 h-1-5 align-middle bg-no-repeat bg-center bg-contain"></span>
+                    </button>
+                    <div class="flex flex-initial flex-grow-0 items-center hidden sm:block" id="navbarTogglerDemo03">
+                        <ul class="mt-2 mobile:mt-0 text-center flex flex-row">
+                            <li class="mx-2 md:mx-6 list-item">
+                                <a class="block p-2 text-primary-light" aria-current="page" href="/src/index.html">Inicio</a>
+                            </li>
+                            <li class="mx-2 md:mx-6 list-item">
+                                <a class="block p-2 text-dark-light transition ease-in-out hover:text-white" href="/src/members.html">Miembros</a>
+                            </li>
+                            <li class="mx-2 md:mx-6 list-item">
+                                <a class="block p-2 text-dark-light transition ease-in-out hover:text-white" href="#">Blog</a>
+                            </li>
+                            <li class="mx-2 md:mx-6 list-item">
+                                <a class="block p-2 text-dark-light transition ease-in-out hover:text-white" href="/src/contact.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="min-h-screen pt-8 pb-16 flex flex-wrap justify-center items-center flex-col px-4 text-center">
+            <div class="py-16 px-8 border-2 border-solid border-black max-w-lg rounded">
+                <h1 class="text-2xl mb-4 font-bold">Bienvenido</h1>
+                <p class="text-lg">
+                    Las dos páginas que se han escogido de la PEC 2 para desarrollarlas con <span class="font-bold">Tailwind</span> han sido:
+                    <a class="text-primary hover:text-primary-light" href="members.html">Miembros</a> y
+                    <a class="text-primary hover:text-primary-light" href="contact.html">Contacto</a>
+                </p>
+            </div>
+        </main>
+        <footer class="border-t-3 border-solid border-black-light-opacity">
+            <nav class="py-4 bg-dark relative flex flex-wrap items-center justify-between">
+                <div class="flex flex-wrap items-center justify-between text-center px-3 w-full">
+                    <div class="my-2 flex-0 w-full text-center sm:my-0 md:w-1/6 md:flex-0">
+                        <a class="text-white font-alfa hover:text-dark-light m-0 ml-2 text-fs pt-1.5 xl:text-2.5xl" href="src/index">BMM</a>
+                    </div>
+                    <div class="my-2 flex-0 w-full text-center sm:my-0 md:w-4/6 md:flex-0">
+                        <ul class="items-center justify-center flex flex-wrap flex-col pl-0 my-0 list-none sm:flex-row">
+                            <li class="mx-4 list-item sm:my-2 xl:mx-12">
+                                <a class="text-primary-light block py-2 px-0" aria-current="page" href="/src/index.html">Inicio</a>
+                            </li>
+                            <li class="mx-4 list-item sm:my-2 xl:mx-12">
+                                <a class="text-dark-light block py-2 px-0 transition ease-in-out hover:text-white" href="/src/members.html">Miembros</a>
+                            </li>
+                            <li class="mx-4 list-item sm:my-2 xl:mx-12">
+                                <a class="text-dark-light block py-2 px-0 transition ease-in-out hover:text-white" href="#">Blog</a>
+                            </li>
+                            <li class="mx-4 list-item sm:my-2 xl:mx-12">
+                                <a class="text-dark-light block py-2 px-0 transition ease-in-out hover:text-white" href="/src/contact.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="my-2 flex-0 w-full text-center flex justify-center sm:my-0 md:w-1/6 md:flex-0">
+                        <a class="text-white hover:text-dark-light mx-4 text-fs-4 xl:text-2xl" href="#" target="_blank" rel="noopener noreferrer"><i class="buttons fab fa-google-plus-g"></i></a>
+                        <a class="text-white hover:text-dark-light mx-4 text-fs-4 xl:text-2xl" href="#" target="_blank" rel="noopener noreferrer"><i class="buttons fab fa-facebook-f"></i></a>
+                        <a class="text-white hover:text-dark-light mx-4 text-fs-4 xl:text-2xl" href="#" target="_blank" rel="noopener noreferrer"><i class="buttons fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </footer>
         <script src="./assets/scripts/main.js"></script>
         <!-- do not remove this line! -->
     </body>

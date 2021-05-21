@@ -3,9 +3,30 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
+      screens: {
+        mobile: "500px",
+        sm: "576px",
+        md: "768px",
+        lg: "992px",
+        xl: "1200px",
+        "2xl": "1400px",
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        alfa: ["Alfa Slab One", "cursive"],
+      },
+      colors: {
+        primary: "#5d9cec",
+        "primary-light": "#8bb8f1",
+        "primary-dark": "#2f80e7",
+        "primary-form": "#75abef",
+        "black-light-opacity": "#ccc",
+        dark: "#2d2e2e",
+        "dark-light": "#acaeae",
+      },
+      backgroundImage: {
         bars: "url('../images/bars.svg')",
-      }),
+      },
       borderWidth: {
         3: "3px",
       },
@@ -19,20 +40,9 @@ module.exports = {
         "input-color": "#212529",
         primary: "#5d9cec",
         "primary-border": "#86b7fe",
-        "primary-hover-border": "#6da6ee",
+        "primary-form-border": "#6da6ee",
       },
-      fontFamily: {
-        poppins: '"Poppins", sans-serif',
-        alfa: '"Alfa Slab One", cursive',
-      },
-      colors: {
-        blue: "#2f80e7",
-        "dark-light": "#acaeae",
-        "primary-light": "#8bb8f1",
-        "black-light-opacity": "#ccc",
-        primary: "#5d9cec",
-        "primary-hover": "#75abef",
-      },
+
       backgroundColor: {
         dark: "#2d2e2e",
         gray: "#e9ecef",
@@ -65,17 +75,7 @@ module.exports = {
       maxWidth: {
         "screen-xl": "1200px",
       },
-      screens: {
-        sm: "576px",
-        md: "768px",
-        lg: "992px",
-        xl: "1200px",
-        xxl: "1400px",
 
-        mobile: "500px",
-        tablet: "768px",
-        desktop: "1200px",
-      },
       flex: {
         initial: "0 1 auto",
         0: "0 0 auto",
