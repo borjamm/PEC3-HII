@@ -15,11 +15,11 @@
   }
 
   .card-title {
-    @apply mt-4 mb-2 text-1-2 font-bold leading-1.2;
+    @apply mt-4 mb-2 text-1.2 font-bold leading-1.2;
   }
 
   .card-subtitle {
-    @apply text-sm mb-4 mt-minus leading-1.2;
+    @apply text-0.9 mb-4 mt-minus-0.25 leading-1.2;
   }
 
   .card-text {
@@ -52,7 +52,6 @@
 
   .btn-primary {
     @apply block
-      float-right
       uppercase
       font-bold
       py-2
@@ -71,21 +70,117 @@
       transition
       duration-150
       ease-in-out
-      focus:border-primary-border
+      focus:border-primary-dark
       focus:outline-none
-      focus:shadow-outline-input
+      focus:shadow-outline-primary
       hover:text-black
-      hover:bg-primary-form
-      hover:border-primary-form-border 
-      w-full
-      md:w-48/52;
+      hover:bg-primary-buttom
+      hover:border-primary-buttom 
+      w-full;
   }
 
   /*-------------------------------------------------*\
-    # ABBR
+    # HEADER
   \*-------------------------------------------------*/
 
-  abbr[title].abbr {
-    @apply no-underline;
+  .header {
+    @apply border-b-3 border-solid border-black-light-opacity;
+  }
+
+  .header-nav {
+    @apply py-4 bg-dark;
+  }
+
+  .header-nav-container {
+    @apply w-full mx-auto flex items-center justify-between px-3;
+  }
+
+  .header-nav-logo {
+    @apply text-white font-alfa hover:text-dark-light m-0 ml-2 text-logo xl:text-logo-xl;
+  }
+
+  .header-nav-button {
+    @apply block
+    py-1
+    px-3
+    text-dark-light
+    border border-dark-light
+    text-xl
+    rounded
+    bg-transparent
+    leading-none
+    sm:hidden
+    focus:shadow-outline-gray
+    focus:outline-none
+    transition-shadow
+    ease-in-out;
+  }
+
+  .header-nav-icon {
+    @apply bg-bars inline-block w-1.5em h-1.5em align-middle bg-no-repeat bg-center bg-contain;
+  }
+
+  .header-nav-container-links {
+    @apply flex flex-initial flex-grow-0 items-center hidden sm:block;
+  }
+
+  .header-nav-list {
+    @apply mt-2 mobile:mt-0 text-center flex flex-row;
+  }
+
+  .header-nav-item {
+    @apply mx-2 md:mx-6 list-item;
+  }
+
+  .header-nav-link {
+    @apply block p-2;
+  }
+
+  /*-------------------------------------------------*\
+    # FOOTER
+  \*-------------------------------------------------*/
+
+  .footer {
+    @apply border-t-3 border-solid border-black-light-opacity;
+  }
+
+  .footer-nav {
+    @apply py-4 bg-dark relative flex flex-wrap items-center justify-between;
+  }
+
+  .footer-nav-container {
+    @apply flex flex-wrap items-center justify-between text-center px-3 w-full;
+  }
+
+  .footer-nav-logo {
+    @apply my-2 flex-0 w-full text-center sm:my-0 md:w-1/6 md:flex-0;
+  }
+
+  .footer-nav-logo-link {
+    @apply text-white font-alfa hover:text-dark-light m-0 ml-2 text-logo pt-1.5 xl:text-logo-xl;
+  }
+
+  .footer-nav-container-links {
+    @apply my-2 flex-0 w-full text-center sm:my-0 md:w-4/6 md:flex-0;
+  }
+
+  .footer-nav-list {
+    @apply items-center justify-center flex flex-wrap flex-col pl-0 my-0 list-none sm:flex-row;
+  }
+
+  .footer-nav-item {
+    @apply mx-4 list-item sm:my-2 xl:mx-12;
+  }
+
+  .footer-nav-link {
+    @apply block py-2 px-0;
+  }
+
+  .footer-nav-buttons {
+    @apply my-2 flex-0 w-full text-center flex justify-center sm:my-0 md:w-1/6 md:flex-0;
+  }
+
+  .footer-nav-btn {
+    @apply text-white hover:text-dark-light mx-4 text-rrss xl:text-2xl;
   }
 }
