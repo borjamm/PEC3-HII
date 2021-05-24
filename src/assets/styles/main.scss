@@ -26,7 +26,6 @@
  */
 
 @import "layouts/home";
-@import "components/components.scss";
 
 /**
  * Do NOT include anything else in this file!
@@ -34,4 +33,7 @@
 
 @tailwind base;
 @tailwind components;
+
+@import "components/components.scss";
+
 @tailwind utilities;

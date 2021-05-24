@@ -70,12 +70,15 @@
       transition
       duration-150
       ease-in-out
-      focus:border-primary-dark
+      focus:border-bor-primary-dark
       focus:outline-none
-      focus:shadow-outline-primary
+      focus:shadow-box-primary
       hover:text-black
-      hover:bg-primary-buttom
-      hover:border-primary-buttom 
+      hover:bg-primary-button
+      hover:border-bor-primary-button 
+      active:text-black
+      active:bg-primary-button
+      active:border-bor-primary-button 
       w-full;
   }
 
@@ -96,7 +99,7 @@
   }
 
   .header-nav-logo {
-    @apply text-white font-alfa hover:text-dark-light m-0 ml-2 text-logo xl:text-logo-xl;
+    @apply text-white font-alfa hover:text-dark-light m-0 ml-2 text-calc-2 xl:text-2-3xl;
   }
 
   .header-nav-button {
@@ -104,13 +107,13 @@
     py-1
     px-3
     text-dark-light
-    border border-dark-light
-    text-xl
+    border border-bor-dark-light
+    text-1.25
     rounded
     bg-transparent
     leading-none
     sm:hidden
-    focus:shadow-outline-gray
+    focus:shadow-box-gray
     focus:outline-none
     transition-shadow
     ease-in-out;
@@ -157,7 +160,7 @@
   }
 
   .footer-nav-logo-link {
-    @apply text-white font-alfa hover:text-dark-light m-0 ml-2 text-logo pt-1.5 xl:text-logo-xl;
+    @apply text-white font-alfa hover:text-dark-light m-0 ml-2 text-calc-2 pt-1.5 xl:text-2-3xl;
   }
 
   .footer-nav-container-links {
@@ -181,6 +184,6 @@
   }
 
   .footer-nav-btn {
-    @apply text-white hover:text-dark-light mx-4 text-rrss xl:text-2xl;
+    @apply text-white hover:text-dark-light mx-4 text-calc-1 xl:text-2xl;
   }
 }
