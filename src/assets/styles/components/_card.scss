@@ -1,0 +1,29 @@
+@layer components {
+  /*-------------------------------------------------*\
+    # CARD
+  \*-------------------------------------------------*/
+
+  .card {
+    @apply border-none w-350 text-center mx-4 my-6 relative flex flex-col min-w-0 break-words bg-white bg-clip-border rounded;
+  }
+
+  .card-img-top {
+    @apply h-60 object-cover rounded-t;
+  }
+
+  .card-body {
+    @apply flex-auto p-4;
+  }
+
+  .card-title {
+    @apply mt-4 mb-2 text-1.2 font-bold leading-tight-1;
+  }
+
+  .card-subtitle {
+    @apply text-0.9 mb-4 mt-minus-0.25 leading-tight-1;
+  }
+
+  .card-text {
+    @apply my-0;
+  }
+}

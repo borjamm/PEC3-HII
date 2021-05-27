@@ -19,9 +19,10 @@ module.exports = {
         primary: "#5d9cec",
         "primary-light": "#8bb8f1",
         "primary-dark": "#2f80e7",
-        "primary-button": "#75abef",
+        "primary-darker": "#75abef",
         dark: "#2d2e2e",
         "dark-light": "#acaeae",
+        "black-dark": "#212529",
         "black-light-opacity": "#ccc",
       },
       backgroundImage: {
@@ -37,20 +38,20 @@ module.exports = {
         "bor-dark-light": "hsla(0,0%,100%,.1)",
         "bor-light": "#ced4da",
         "bor-primary-dark": "#86b7fe",
-        "bor-primary-button": "#6da6ee",
+        "bor-primary-darker": "#6da6ee",
       },
       backgroundColor: {
         "bac-dark-light": "#e9ecef",
       },
       minHeight: {
-        minimum: "83vh",
-        resize: "calc(1.5em + .75rem + 2px)",
+        main: "83vh",
+        textarea: "calc(1.5em + .75rem + 2px)",
       },
       width: {
-        85: "350px",
+        350: "350px",
         "1.5em": "1.5em",
         "1/1": "1%",
-        "48/52": "12.5rem",
+        12.5: "12.5rem",
       },
       height: {
         "1.5em": "1.5em",
@@ -64,8 +65,8 @@ module.exports = {
         "calc-1": "calc(1.275rem + .3vw)",
         "calc-2": "calc(1.3rem + .6vw)",
         "calc-3": "calc(1.375rem + 1.5vw)",
-        "2-3xl": "1.75rem",
-        "4-5xl": "2.5rem",
+        1.75: "1.75rem",
+        2.5: "2.5rem",
       },
       maxWidth: {
         container: "1200px",
@@ -80,11 +81,11 @@ module.exports = {
         "minus-1px": "-1px",
       },
       lineHeight: {
-        1.2: "1.2",
+        "tight-1": "1.2",
       },
       boxShadow: {
-        "box-gray": "0 0 0 0.25rem",
-        "box-primary": "0 0 0 0.25rem rgb(13 110 253 / 25%);",
+        "bs-gray": "0 0 0 0.25rem",
+        "bs-primary": "0 0 0 0.25rem rgb(13 110 253 / 25%);",
       },
     },
   },

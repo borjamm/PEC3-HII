@@ -1,0 +1,13 @@
+@layer components {
+  /*-------------------------------------------------*\
+    # BUTTON PRIMARY
+  \*-------------------------------------------------*/
+
+  .btn {
+    @apply block uppercase font-bold py-2 px-0 text-black text-base leading-normal text-center no-underline align-middle select-none border border-solid border-transparent rounded transition duration-150 ease-in-out focus:outline-none hover:text-black active:text-black w-full;
+  }
+
+  .btn-primary {
+    @apply bg-primary border-primary focus:border-bor-primary-dark focus:shadow-bs-primary hover:bg-primary-darker hover:border-bor-primary-darker active:bg-primary-darker active:border-bor-primary-darker;
+  }
+}

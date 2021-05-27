@@ -11,6 +11,7 @@
         <link rel="icon shortcut" type="image/x-icon" href="../src/assets/images/favicon.ico" />
         <title>Contacto</title>
     </head>
+
     <body class="font-poppins">
         <header class="header">
             <nav class="header-nav">
@@ -46,7 +47,7 @@
                 </div>
             </nav>
         </header>
-        <main class="min-h-minimum pt-8 pb-16">
+        <main class="min-h-main pt-8 pb-16 text-black-dark">
             <nav class="nav-breadcrumb" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li>
@@ -56,7 +57,7 @@
                 </ol>
             </nav>
             <div class="mx-auto max-w-container px-4 pb-4 mobile:py-0 mobile:px-16">
-                <h1 class="main__title text-center my-8 relative pb-4 text-2 leading-1.2 text-calc-3 font-medium xl:text-4-5xl">Contáctanos</h1>
+                <h1 class="main-title text-center my-8 relative pb-4 text-2 leading-tight-1 text-calc-3 font-medium xl:text-2.5">Contáctanos</h1>
                 <p class="text-center my-4">
                     Para cualquier consulta no dudes en ponerte en contacto con nosotros
                     <i class="text-1.2 far fa-grin-beam"></i>
@@ -66,76 +67,27 @@
                     <abbr class="abbr" title="Campo obligatorio">*</abbr>
                     son obligatorios.
                 </p>
-                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="rounded-5 bg-white py-4 px-2 mobile:p-0 flex flex-wrap mt-minus-1 mx-minus-0.5" novalidate>
+                <form
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    data-netlify-recaptcha="true"
+                    class="rounded-5 bg-white py-4 px-2 mobile:p-0 flex flex-wrap mt-minus-1 mx-minus-0.5"
+                    novalidate
+                >
                     <input type="hidden" name="form-name" value="contact" />
-                    <div class="flex-shrink-0 w-full max-w-full px-2 mt-4 md:w-2/4 md:flex-0">
-                        <label for="name" class="inline-block mb-2">Nombre (<abbr class="main__abbr">*</abbr>)</label>
-                        <input
-                            type="text"
-                            class="
-                                block
-                                w-full
-                                py-1.5
-                                px-3
-                                text-base
-                                font-normal
-                                leading-normal
-                                bg-clip-padding
-                                rounded
-                                appearance-none
-                                border border-solid border-bor-light
-                                text-dark
-                                placeholder-gray-500
-                                bg-white
-                                transition
-                                duration-150
-                                ease-in-out
-                                focus:border-bor-primary-dark
-                                focus:outline-none
-                                focus:shadow-box-primary
-                            "
-                            id="name"
-                            name="name"
-                            placeholder="Nombre"
-                            required
-                        />
+                    <div class="form-field md:w-2/4">
+                        <label for="name" class="form-label">Nombre (<abbr>*</abbr>)</label>
+                        <input type="text" class="form-control w-full" id="name" name="name" placeholder="Nombre" required />
                     </div>
 
-                    <div class="flex-shrink-0 w-full max-w-full px-2 mt-4 md:w-2/4 md:flex-0">
-                        <label for="email" class="inline-block mb-2">Email (<abbr class="main__abbr">*</abbr>)</label>
+                    <div class="form-field md:w-2/4">
+                        <label for="email" class="form-label">Email (<abbr>*</abbr>)</label>
                         <div class="relative flex flex-wrap items-stretch w-full">
-                            <span
-                                class="flex items-center py-1.5 px-3 text-base font-normal leading-normal text-dark bg-bac-dark-light border border-solid border-bor-light rounded rounded-r-none"
-                                id="inputGroupPrepend"
-                                >@</span
-                            >
+                            <span class="form-icon" id="inputGroupPrepend">@</span>
                             <input
                                 type="email"
-                                class="
-                                    relative
-                                    flex-auto
-                                    w-1/1
-                                    block
-                                    py-1.5
-                                    px-3
-                                    text-base
-                                    font-normal
-                                    leading-normal
-                                    bg-clip-padding
-                                    appearance-none
-                                    border border-solid border-bor-light
-                                    text-dark
-                                    placeholder-gray-500
-                                    bg-white
-                                    ml-minus-1px
-                                    rounded rounded-l-none
-                                    transition
-                                    duration-150
-                                    ease-in-out
-                                    focus:border-bor-primary-dark
-                                    focus:outline-none
-                                    focus:shadow-box-primary
-                                "
+                                class="form-control relative flex-auto w-1/1 ml-minus-1px rounded-l-none"
                                 id="email"
                                 name="email"
                                 placeholder="Email"
@@ -144,66 +96,15 @@
                         </div>
                     </div>
 
-                    <div class="flex-shrink-0 w-full max-w-full px-2 mt-4 md:flex-0">
-                        <label for="subject" class="inline-block mb-2">Asunto (<abbr class="main__abbr">*</abbr>)</label>
-                        <input
-                            type="text"
-                            class="
-                                block
-                                w-full
-                                py-1.5
-                                px-3
-                                text-base
-                                font-normal
-                                leading-normal
-                                bg-clip-padding
-                                rounded
-                                appearance-none
-                                border border-solid border-bor-light
-                                text-dark
-                                placeholder-gray-500
-                                bg-white
-                                transition
-                                duration-150
-                                ease-in-out
-                                focus:border-bor-primary-dark
-                                focus:outline-none
-                                focus:shadow-box-primary
-                            "
-                            id="subject"
-                            placeholder="Asunto"
-                            name="subject"
-                            required
-                        />
+                    <div class="form-field">
+                        <label for="subject" class="form-label">Asunto (<abbr>*</abbr>)</label>
+                        <input type="text" class="form-control w-full" id="subject" placeholder="Asunto" name="subject" required />
                     </div>
 
-                    <div class="flex-shrink-0 w-full max-w-full px-2 mt-4 md:flex-0">
-                        <label for="message" class="inline-block mb-2">Mensaje (<abbr class="main__abbr">*</abbr>)</label>
+                    <div class="form-field">
+                        <label for="message" class="form-label">Mensaje (<abbr>*</abbr>)</label>
                         <textarea
-                            class="
-                                block
-                                w-full
-                                py-1.5
-                                px-3
-                                text-base
-                                font-normal
-                                leading-normal
-                                bg-clip-padding
-                                text-dark
-                                bg-white
-                                appearance-none
-                                border border-solid border-bor-light
-                                resize-y
-                                placeholder-gray-500
-                                rounded
-                                min-h-resize
-                                transition
-                                duration-150
-                                ease-in-out
-                                focus:border-bor-primary-dark
-                                focus:outline-none
-                                focus:shadow-box-primary
-                            "
+                            class="form-control w-full resize-y min-h-textarea"
                             id="message"
                             rows="5"
                             name="message"
@@ -212,12 +113,12 @@
                         ></textarea>
                     </div>
 
-                    <div class="flex-shrink-0 w-full max-w-full px-2 mt-4 md:w-2/4 md:flex-0">
+                    <div class="form-field md:w-2/4">
                         <div data-netlify-recaptcha="true"></div>
                     </div>
 
-                    <div class="flex-shrink-0 w-full max-w-full px-2 mt-4 md:w-2/4 md:flex-0">
-                        <button class="btn-primary float-right md:w-48/52" type="submit">Enviar</button>
+                    <div class="form-field md:w-2/4">
+                        <button class="btn btn-primary float-right md:w-12.5" type="submit">Enviar</button>
                     </div>
                 </form>
             </div>

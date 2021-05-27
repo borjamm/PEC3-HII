@@ -1,0 +1,21 @@
+@layer components {
+  /*-------------------------------------------------*\
+    # FORMS
+  \*-------------------------------------------------*/
+
+  .form-field {
+    @apply flex-shrink-0 w-full max-w-full px-2 mt-4 md:flex-0;
+  }
+
+  .form-label {
+    @apply inline-block mb-2;
+  }
+
+  .form-control {
+    @apply block py-1.5 px-3 text-base font-normal leading-normal bg-clip-padding rounded appearance-none border border-solid border-bor-light text-dark placeholder-gray-500 bg-white transition duration-150 ease-in-out focus:border-bor-primary-dark focus:outline-none focus:shadow-bs-primary;
+  }
+
+  .form-icon {
+    @apply flex items-center py-1.5 px-3 text-base font-normal leading-normal text-dark bg-bac-dark-light border border-solid border-bor-light rounded rounded-r-none;
+  }
+}

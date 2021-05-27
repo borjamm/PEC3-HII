@@ -1,0 +1,21 @@
+@layer components {
+  /*-------------------------------------------------*\
+    # BREADCRUMB
+  \*-------------------------------------------------*/
+
+  .nav-breadcrumb {
+    @apply ml-0 mobile:ml-20 mobile:text-center;
+  }
+
+  .breadcrumb {
+    @apply flex flex-wrap p-0 mb-4 list-none mt-0 justify-center mobile:justify-start;
+  }
+
+  .breadcrumb-item {
+    @apply breadcrumb-active text-dark pl-2;
+  }
+
+  .breadcrumb-link {
+    @apply no-underline text-primary-dark hover:text-primary-light;
+  }
+}

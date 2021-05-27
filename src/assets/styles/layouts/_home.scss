@@ -2,7 +2,7 @@
   # BLOQUE TÍTULO PRINCIPAL (PSEUDOELEMENTO BEFORE)
 \*-------------------------------------------------*/
 
-.main__title:before {
+.main-title:before {
   content: "";
   position: absolute;
   margin-left: auto;
@@ -15,22 +15,22 @@
   border-radius: 50px;
   border-bottom-width: 7px;
   border-bottom-style: solid;
-  border-color: $color-primary-light; // color
+  border-color: theme("colors.primary-light");
 }
 
 /*-------------------------------------------------*\
-  # BREADCUMB (PSEUDOELEMENTO BEFORE)
+  # BREADCRUMB (PSEUDOELEMENTO BEFORE)
 \*-------------------------------------------------*/
 
-.breadcrumb__active:before {
+.breadcrumb-active:before {
+  content: ">";
   float: left;
   padding-right: 0.5rem;
-  color: #2d2e2e;
-  content: ">";
+  color: theme("colors.dark");
 }
 
 /*-------------------------------------------------*\
-  # ABBR
+  # ABBR (ATRIBUTO TITLE)
 \*-------------------------------------------------*/
 
 abbr[title].abbr {
